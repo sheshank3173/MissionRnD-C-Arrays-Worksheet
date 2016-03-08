@@ -31,7 +31,6 @@ int * sortedArrayInsertNumber(int *Arr, int len, int num)
 				pos = i + 1;
 		}
 	}
-	Arr = (int *)realloc(Arr, sizeof(int *));
 	for (j = len - 1; j >= pos; j--)
 		Arr[j + 1] = Arr[j];
 	Arr[pos] = num;
